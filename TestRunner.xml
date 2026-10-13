@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="CrossBrowserSuite">
+    <listeners>
+        <listener class-name="TestNGListeners.CustomeListeners"/>
+    </listeners>
+    <test name="ChromeTest" enabled="true">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Features.F01_Login"/>
+        </classes>
+    </test>
+</suite>
